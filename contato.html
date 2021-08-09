@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Caravan - Contato</title>
+</head>
+
+<body>
+  <!--Modal-->
+  <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <small class="form-text text-muted">Esqueceu A Senha?<a href="#"> Clique Aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Fecha Modal-->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/caravan.svg" alt="caravan">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="abrir navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Locais</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="local.html">Califórinia</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dublin</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+      <h2 class="display-4 text-primary">Fale Conosco</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg mb-5">
+        <form class="bg-light rounded p-4 box-shadow">
+          <div class="form-group">
+            <label for="clienteNome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="clienteNome">
+          </div>
+          <div class="form-group">
+            <label for="clienteEmail" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="clienteEmail">
+          </div>
+          <div class="form-group">
+            <label for="clinteMensagem">Mensagem</label>
+            <textarea id="clinteMensagem" class="form-control" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+      <div class="col-lg">
+        <h2 class="h6">NOSSO ENDEREÇO</h2>
+        <a><img class="img-fluid box-shadow rouended mb-4" src="img/mapa.png" alt="mapa"></a>
+
+
+        <h2 class="h6">DADOS DE CONTATO</h2>
+        <ul class="list-unstyled text-secondary">
+          <li>caravan@caravan.com.br</li>
+          <li>+55 21 9 9999-9999</li>
+          <li>De Seg. à Sex. das 8h às 18h</li>
+        </ul>
+
+        <h2 class="h6">REDES SOCIAIS</h2>
+        <ul class="list-unstyled text-secondary" style="max-width: 260px">
+          <li><a class=" btn btn-outline-secondary btn-block btn-sm mb-2" href="#">Facebook</a></li>
+          <li><a class="btn btn-outline-secondary btn-block btn-sm mb-2" href="#">Instagram</a></li>
+          <li><a class="btn btn-outline-secondary btn-block btn-sm mb-2" href="#">Whatsapp</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="my-5 text-center">
+      <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+      <h1 class="display-4 text-primary">Perguntas Frequentes</h1>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
+        <div class="pergunta">
+          <a class="lead" data-toggle="collapse" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">É possível Cancelar a Viagem?</a>
+          <div id="pergunta1" data-parent="#perguntasFrequentes" class="collapse show" role="tabpanel">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat reiciendis tempore, at explicabo, mollitia ullam natus blanditiis eligendi ex quas in error facilis amet.
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta">
+          <a class="lead" data-toggle="collapse" href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">Qual A Garantia Que Eu Tenho Se Perder O Voo?</a>
+          <div data-parent="#perguntasFrequentes" id="pergunta2" class="collapse" role="tabpanel">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat reiciendis tempore, at explicabo, mollitia ullam natus blanditiis eligendi ex quas in error facilis amet.
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta">
+          <a class="lead" data-toggle="collapse" href="#pergunta3" aria-expanded="true" aria-controls="pergunta3">Qual O Melhor Destino?</a>
+          <div data-parent="#perguntasFrequentes" id="pergunta3" class="collapse" role="tabpanel">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat reiciendis tempore, at explicabo, mollitia ullam natus blanditiis eligendi ex quas in error facilis amet.
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="pergunta">
+          <a class="lead" data-toggle="collapse" href="#pergunta4" aria-expanded="true" aria-controls="pergunta4">Há Descontos Para Grupos Grandes?</a>
+          <div data-parent="#perguntasFrequentes" id="pergunta4" class="collapse" role="tabpanel">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat reiciendis tempore, at explicabo, mollitia ullam natus blanditiis eligendi ex quas in error facilis amet.
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">Califórnia</a></li>
+            <li><a href="local.html">Paris</a></li>
+            <li><a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li>+55 21 9 9999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a class="btn btn-outline-secondary btn-block btn-sm mb-2" href="#" style="max-width: 140px;">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-block btn-sm mb-2" href="#" style="max-width: 140px;">Instagram</a></li>
+            <li><a class="btn btn-outline-secondary btn-block btn-sm mb-2" href="#" style="max-width: 140px;">Whatsapp</a></li>
+          </ul>
+        </div>
+  </footer>
+  <div class=" container-fluid bg-primary text-white text-center py-3">
+    <p class="mb-0">Well.Dev - Todos os Direitos Reservados</p>
+  </div>
+
+  <script type="text/javascript" src="JS/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="JS/popper.min.js"></script>
+  <script type="text/javascript" src="JS/bootstrap.js"></script>
+  <script type="text/javascript" src="JS/script.js"></script>
+</body>
+
+</html>
